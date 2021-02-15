@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 1.2rem;
+}
+#mainHeader{
+    background-color: #333333;
+    color:#ffffff;
+    padding: 1px 0px;
+    border-bottom: 3px solid #fa8072;
+    /* min-height: 100px; */
+}
+header .logo{
+    float: left;
+}
+header nav{
+    float: right;
+    margin-top: 35px;
+    width: 26%;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    display: inline;
+    float:left;
+    list-style: none;
+    padding-right: 4%;
+}
+nav ul li a{
+    font-size: 18px;
+    padding-right: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    font-size: 18px;
+    padding-right: 25px;
+    color: #ff0000;
+    text-decoration: none;
+}
+nav ul li a.active{
+        font-size: 18px;
+        padding-right: 25px;
+        color: #ff0000;
+        text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+#slogan{
+    background-image: url("../images/maxresdefault.jpg");
+    opacity: 0.9;
+    min-height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+.center{
+    margin: auto;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin-left: 20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#newsLetter{
+    background-color: #333333;
+    color:#ffffff;
+    padding: 1px 0px;
+    border-bottom: 3px solid #fa8072;
+    border-top: 3px solid #fa8072;
+    /* min-height: 100px; */
+}
+#newsLetter h3{
+    float: left;
+}
+#newsLetter form{
+    float: right;
+    margin-top: 8px;
+}
+input[type="email"]{
+    height: 32px;
+    width: 203px;
+    border-radius: 6px;
+}
+.btn-1{
+    background-color: #ff0000;
+    border-radius: 3px;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
+.box{
+    display: inline-block;
+    width: 33%;
+    border: 1px dotted black;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 10px 0px;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 75px;
+}
+footer{
+    background-color: #333333;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 20px 0px;
+    bottom: 10px;
+    text-align: center;
+}
