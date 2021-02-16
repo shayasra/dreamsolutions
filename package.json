@@ -1,0 +1,30 @@
+{
+  "name": "dreamsoluions",
+  "version": "1.0.0",
+  "description": "web design and development website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "dreamsolutions",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shayasra/dreamsolutions.git"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "development",
+    "graphic"
+  ],
+  "author": "shayas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shayasra/dreamsolutions/issues"
+  },
+  "homepage": "https://github.com/shayasra/dreamsolutions#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
