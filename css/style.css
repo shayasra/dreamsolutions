@@ -16,7 +16,7 @@ body{
     color:#ffffff;
     padding: 1px 0px;
     border-bottom: 3px solid #fa8072;
-    /* min-height: 100px; */
+    min-height: 100px;
 }
 header .logo{
     float: left;
@@ -24,7 +24,7 @@ header .logo{
 header nav{
     float: right;
     margin-top: 35px;
-    width: 26%;
+    width: 28%;
 }
 nav ul{
     margin: 0px;
@@ -73,7 +73,7 @@ nav ul li a.active{
   position: absolute;
   top: 50%;
   width: 50%;
-  margin-left: 20%;
+  margin-left: 22%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -84,6 +84,29 @@ nav ul li a.active{
     border-bottom: 3px solid #fa8072;
     border-top: 3px solid #fa8072;
     /* min-height: 100px; */
+}
+article.left{
+    float: left;
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 15px;
+}
+.arBox{
+    background-color: #362424;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+article.right{
+    float: right;
+   
+    width: 30%;
+    text-align: justify;
+    margin-top: 15px;
 }
 #newsLetter h3{
     float: left;
@@ -109,21 +132,88 @@ input[type="email"]{
 .box{
     display: inline-block;
     width: 33%;
-    border: 1px dotted black;
     box-sizing: border-box;
     padding: 8px;
     margin: 10px 0px;
+    text-align: center;
 }
 img{
     display: block;
     margin: auto;
     width: 75px;
 }
+.servicesList{
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: cornsilk;
+    margin: 15px 0px;
+}
+.servicesList dl{
+    padding: 15px;
+    border: 1px dotted #ff7f50;
+    border-radius: 8px;
+    box-shadow: #6495ed 2px 2px 2px 2px;
+}
+.servicesList dt{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.servicesList dd{
+    margin: 8px 0px;
+}
+form.contact{
+    float: right;
+    margin: 15px 0px;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+}
+form.contact input[type="text"],
+form.contact input[type="email"],
+form.contact input[type="password"]{
+    display: block;
+    width: 90%;
+    height: 22px;
+    margin: 7px 20px;
+} 
 footer{
-    background-color: #333333;
+    background-color:#ff7f50;
     overflow: hidden;
     color: #ffffff;
     padding: 20px 0px;
+    margin: 10px 0px;
     bottom: 10px;
     text-align: center;
+}
+@media (max-width: 786px){
+    /* body{
+        display: none;
+    } */
+    .logo, .navBar, #newsLetter h3, #newsLetter form, 
+    .box, article.left, article.right, .servicesList, form.contact{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    #newsLetter h3, #newsLetter form, .box, article.left, article.right{
+        margin: 15px 0px;
+    }
+    article.left, article.right,.servicesList{
+        text-align: justify;
+    }
+    form.contact{
+        text-align: justify;
+    }
+    form.contact textarea{
+        display: block;
+        width: 90%;
+        margin: 8px 20px;
+    }
+    form.contact input[type="submit"]{
+        margin-left: 20px
+    }
 }
